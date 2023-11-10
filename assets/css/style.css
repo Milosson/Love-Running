@@ -158,6 +158,25 @@ main {
     color: #3a3a3a;
 }
 
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into cirlce */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+/* Adding Flexbox properties for adaptive on larger screen */
+
+#benefits-image {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
