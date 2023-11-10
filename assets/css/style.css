@@ -143,6 +143,23 @@ main {
     margin: 5px 0;
 }
 
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -156,26 +173,6 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
-}
-
-#circle-cover-bg {
-    background: url("../images/reasons-image.webp") no-repeat top center / cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    /* Makes the square image into cirlce */
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-
-}
-
-/* Adding Flexbox properties for adaptive on larger screen */
-
-#benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -220,7 +217,7 @@ main {
         right: 50px;
     }
 
-    /* Reason section */
+    /* Reasons section */
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -233,7 +230,7 @@ main {
         width: 75%;
     }
 
-    #benefits-mental {
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
@@ -247,11 +244,9 @@ main {
     }
 }
 
-/* Large devices (desktops 12900px and up) */
-
 @media screen and (min-width: 1200px) {
 
-    /* Reason Section */
+    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
@@ -260,18 +255,20 @@ main {
     #benefits>div {
         flex: 1;
     }
+
+    #benefits-image {
+        order: 0
+    }
+
     #benefits-mental {
         order: 1;
     }
 
-    #benefits-image {
-        order: 0;
+    #benefits-mental>div {
+        align-self: flex-start;
     }
-#benefits-mental > div {
-    align-self: flex-start;
-}
-#benefits-physical > div {
-    align-self: flex-end;
-}
 
+    #benefits-physical>div {
+        align-self: flex-end;
+    }
 }
