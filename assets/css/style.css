@@ -71,8 +71,7 @@ nav {
     top: 100%;
 }
 
-/* Nav Toggle */
-
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -91,37 +90,8 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
-main a:hover {
-    background-color: #f00;
-}
 
-         .tooltip {
-             position: relative;
-             display: inline-block;
-             border-bottom: 1px dotted black;
-         }
-    
-         .tooltip .tooltiptext {
-             visibility: hidden;
-             width: 120px;
-             background-color: black;
-             color: #fff;
-             text-align: center;
-             border-radius: 6px;
-             padding: 5px 0;
-             /* Position the tooltip */
-             position: absolute;
-             z-index: 1;
-             bottom: 100%;
-             left: 50%;
-             margin-left: -60px;
-         }
-    
-         .tooltip:hover .tooltiptext {
-             visibility: visible;
-         }
-
-/* Hero Section */
+/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
@@ -130,10 +100,8 @@ main a:hover {
 }
 
 #cover-text {
-
-    /* Final rgba value set the opacity so it is semi transparent */
-
-    background-color: rgba(241, 109, 10, .7);
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -145,7 +113,6 @@ main a:hover {
 
 #cover-text>h2,
 #cover-text>h3 {
-
     color: #ffffff;
 }
 
@@ -164,7 +131,7 @@ main a:hover {
     color: #3a3a3a;
 }
 
-/* Media query: tablets and larger (768px and up */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /* Header */
@@ -194,19 +161,22 @@ main a:hover {
         margin: 0 0.5rem;
     }
 
-    /* Main Content */
+    /* Main content */
     main {
-        /* Push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
+    /* Hero image */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
 }
 
-/* Media query: laptops and larger (992px and up */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-
-
 }
